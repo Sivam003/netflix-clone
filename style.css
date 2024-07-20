@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Martel Sans", sans-serif;
+}
+
+.main {
+    height: 100vh;
+    background-image: url("assets/images/bg.jpg");
+    position: relative;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .box {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+}
+
+.main nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    padding: 20px 200px;
+}
+
+.main nav select,
+.foot .details select {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    margin-right: 20px;
+    padding: 0px 15px;
+    border-radius: 4px;
+}
+
+.main nav button {
+    background-color: rgb(229, 0, 0);
+    color: white;
+    padding: 4px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.landing {
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-top: 15%;
+}
+
+.landing h1 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.landing h4 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.landing p,
+.para p {
+    font-size: 20px;
+}
+
+.landing input,
+.bottom input {
+    padding: 13px 24px;
+    background: transparent;
+    border: 1px solid rgba(147, 161, 163, 0.584);
+    border-radius: 5px;
+    width: 22%;
+    font-size: 16px;
+    color: inherit;
+    margin-top: 10px;
+}
+
+.landing button,
+.bottom button {
+    background-color: rgb(229, 0, 0);
+    color: white;
+    padding: 6px 24px;
+    font-size: 24px;
+    margin-left: 8px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    top: 2px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.landing button:hover,
+.button button:hover {
+    background-color: rgb(210, 0, 0);
+}
+
+.separation {
+    height: 8px;
+    background-color: rgb(35, 35, 35);
+}
+
+.first {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    padding: 40px 120px;
+}
+
+.first .image {
+    position: relative;
+    z-index: 0;
+}
+
+.first .image .video {
+    position: absolute;
+    top: 98px;
+    right: 79px;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.first .content h1 {
+    font-size: 48px;
+    font-weight: 900;
+}
+.first .content h4 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.second .content h1 {
+    line-height: 1.3;
+}
+
+.second .image {
+    position: relative;
+}
+
+.second .image .phone-details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid rgba(128, 128, 128, 0.7);
+    border-radius: 12px;
+    width: 50%;
+    position: absolute;
+    bottom: 10px;
+    left: 25%;
+    background-color: black;
+    padding: 10px 5px;
+}
+
+.second .image .phone-details .download h4 {
+    font-weight: 800;
+    margin-bottom: -10px;
+}
+
+.second .image .phone-details .download span {
+    font-size: 14px;
+    color: rgb(0, 113, 235);
+}
+
+.third .image {
+    position: relative;
+    z-index: 0;
+}
+
+.third .image .img {
+    width: 100%;
+}
+
+.third .image .video {
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 63%;
+    max-height: 47%;
+    position: absolute;
+    top: 7%;
+    left: 18%;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.faq .header h2 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.faq .questions {
+    width: 80%;
+}
+
+.faq .questions .question {
+    background-color: rgba(40, 39, 39, 0.826);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    margin-bottom: 10px;
+}
+
+.faq .questions .question i {
+    font-size: 30px;
+}
+
+.faq .questions .question:hover {
+    background-color: rgba(62, 61, 61, 0.826);
+}
+
+.faq .para {
+    margin-top: 30px;
+}
+
+.faq .bottom {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot {
+    display: flex;
+    background-color: black;
+    color: #ffffffb3;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 120px;
+}
+
+.foot .details {
+    padding: 10px 20px;
+}
+
+.foot .details ul {
+    list-style: none;
+}
+
+.foot .details ul li {
+    padding: 4px;
+}
+
+.foot .details li a{
+    color: #ffffffb3;
+    font-size: 14px;
+}
+
+.foot .details p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
